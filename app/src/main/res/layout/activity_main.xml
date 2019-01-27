@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="Agenda de Contactos"/>
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:hint="Introduce tu Nombre"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:hint="Introduce tu correo"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etnumero"
+        android:layout_width="match_parent"
+        android:hint="Introduce tu numero de telefono"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <Button
+
+        android:id="@+id/btn1"
+        android:onClick="guardarpref"
+        android:layout_width="match_parent"
+        android:text="GUARDAR DATOS"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:text="CARGAR DATOS"
+        android:onClick="mostrarpref"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/tvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
